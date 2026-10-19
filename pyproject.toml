@@ -1,6 +1,6 @@
 [project]
 name = "term-wyrm"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Unified interface for ontology search APIs (OLS, UMLS) with standardized CURIE prefixes."
 readme = "README.md"
 license = "MIT"
@@ -11,12 +11,21 @@ dependencies = []
 dev = ["pytest>=8", "ruff>=0.6"]
 
 [build-system]
-requires = ["uv_build>=0.11,<0.12"]
-build-backend = "uv_build"
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/term_wyrm/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/term_wyrm"]
 
 [tool.ruff]
 line-length = 88
-target-version = "py312"
+target-version = "py313"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

@@ -133,7 +133,7 @@ class TestPackagedData:
     def test_api_preferences(self, vocab):
         assert vocab["HP"].api_prefix("UMLS") == "HPO"
         assert vocab["snomedct"].api_prefix("OLS") == "SNOMED"
-        assert vocab["snomedct"].api_prefix("UMLS") == "SNOMED_US"
+        assert vocab["snomedct"].api_prefix("UMLS") == "SNOMEDCT_US"
         assert vocab["omim"].api_prefix("UMLS") == ""
         assert vocab["MONDO"].api_prefix("OLS") == "MONDO"
 
