@@ -48,7 +48,10 @@ class Vocabulary:
 
     @property
     def names(self) -> list[str]:
-        return [self.prefix, *self.synonyms]
+        """Every name lookups accept: prefix, synonyms, and API-specific
+        prefixes (so UMLS's ``NCI`` maps back to ``NCIT``)."""
+        api_names = [name for name in self.api_prefixes.values() if name]
+        return [self.prefix, *self.synonyms, *api_names]
 
     def api_prefix(self, family: str) -> str:
         """The prefix the given API family uses, defaulting to the preferred one."""

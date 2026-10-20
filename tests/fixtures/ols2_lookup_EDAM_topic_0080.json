@@ -1,0 +1,30 @@
+{
+ "page": 0,
+ "numElements": 1,
+ "totalPages": 1,
+ "totalElements": 1,
+ "elements": [
+  {
+   "curie": "EDAM:topic_0080",
+   "definedBy": [
+    "edam"
+   ],
+   "definition": [
+    "The archival, processing and analysis of molecular sequences (monomer composition of polymers) including molecular sequence data resources, sequence sites, alignments, motifs and profiles."
+   ],
+   "iri": "http://edamontology.org/topic_0080",
+   "isDefiningOntology": true,
+   "label": [
+    "Sequence analysis"
+   ],
+   "ontologyId": "edam",
+   "ontologyPreferredPrefix": "EDAM",
+   "shortForm": "EDAM_topic_0080",
+   "type": [
+    "class",
+    "entity"
+   ]
+  }
+ ],
+ "facetFieldsToCounts": {}
+}

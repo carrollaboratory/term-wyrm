@@ -1,0 +1,1447 @@
+{
+ "_embedded": {
+  "terms": [
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0001327",
+    "lang": "en",
+    "description": [
+     "Generalised myoclonic seizure provoked by flashing or flickering light."
+    ],
+    "synonyms": [
+     "Photically induced myoclonic seizure",
+     "Photomyoclonic seizure",
+     "Photomyoclonic seizures"
+    ],
+    "annotation": {
+     "id": [
+      "HP:0001327"
+     ]
+    },
+    "label": "Photosensitive myoclonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0001327",
+    "obo_id": "HP:0001327",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Generalised myoclonic seizure provoked by flashing or flickering light.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Photomyoclonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0002121",
+    "lang": "en",
+    "description": [
+     "in 2017 the ILAE Commission for Classification and Terminology recommended classifying a seizure as having focal or generalized onset only when there is a high degree of confidence (over 80%, arbitrarily chosen to parallel the usual allowable beta error) in the accuracy of this determination; see Dialeptic seizure.",
+     "A generalized non-motor (absence) seizure is a type of a type of dialeptic seizure that is of electrographically generalized onset. It is a generalized seizure characterized by an interruption of activities, a blank stare, and usually the person will be unresponsive when spoken to. Any ictal motor phenomena are minor in comparison to these non-motor features."
+    ],
+    "synonyms": [
+     "Absence seizure",
+     "Petit mal seizure",
+     "Petit mal",
+     "Absence seizures",
+     "Brief seizures with staring spells",
+     "Generalised non-motor (absence) seizure",
+     "Generalised non-motor seizure",
+     "Petit mal seizures"
+    ],
+    "annotation": {
+     "has_alternative_id": [
+      "HP:0007143",
+      "HP:0011148"
+     ],
+     "id": [
+      "HP:0002121"
+     ]
+    },
+    "label": "Generalized non-motor (absence) seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0002121",
+    "obo_id": "HP:0002121",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized non-motor (absence) seizure is a type of a type of dialeptic seizure that is of electrographically generalized onset. It is a generalized seizure characterized by an interruption of activities, a blank stare, and usually the person will be unresponsive when spoken to. Any ictal motor phenomena are minor in comparison to these non-motor features.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-0736-9199",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-0736-9199"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276062",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276062"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Absence seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     },
+     {
+      "name": "Brief seizures with staring spells",
+      "scope": "hasExactSynonym",
+      "type": "layperson term",
+      "xrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-6548-5200",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-6548-5200"
+       }
+      ]
+     },
+     {
+      "name": "Generalised non-motor (absence) seizure",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Generalised non-motor seizure",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Petit mal seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0002123",
+    "lang": "en",
+    "description": [
+     "A generalized myoclonic seizure is a type of generalized motor seizure characterized by bilateral, sudden, brief (<100 ms) involuntary single or multiple contraction of muscles or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus."
+    ],
+    "synonyms": [
+     "Generalised epileptic myoclonus",
+     "Generalised myoclonic seizure",
+     "Generalized epileptic myoclonus",
+     "Myoclonic epilepsy, progressive",
+     "Myoclonus seizures",
+     "Generalised myoclonic seizures",
+     "Generalized myoclonic seizures"
+    ],
+    "annotation": {
+     "has_alternative_id": [
+      "HP:0006869",
+      "HP:0006902",
+      "HP:0007075",
+      "HP:0007202",
+      "HP:0007284",
+      "HP:0007294"
+     ],
+     "id": [
+      "HP:0002123"
+     ]
+    },
+    "label": "Generalized myoclonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0002123",
+    "obo_id": "HP:0002123",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized myoclonic seizure is a type of generalized motor seizure characterized by bilateral, sudden, brief (<100 ms) involuntary single or multiple contraction of muscles or muscle groups of variable topography (axial, proximal limb, distal). Myoclonus is less regularly repetitive and less sustained than is clonus.",
+      "oboXrefs": [
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Generalised myoclonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Generalized myoclonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0007207",
+    "lang": "en",
+    "description": [
+     "Generalized-onset tonic-clonic seizures that are provoked by flashing or flickering light."
+    ],
+    "synonyms": [
+     "Photically induced tonic-clonic seizure",
+     "Seizures, tonic-clonic, photosensitive",
+     "Photosensitive tonic-clonic seizures"
+    ],
+    "annotation": {
+     "id": [
+      "HP:0007207"
+     ]
+    },
+    "label": "Photosensitive tonic-clonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0007207",
+    "obo_id": "HP:0007207",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Generalized-onset tonic-clonic seizures that are provoked by flashing or flickering light.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-0736-9199",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-0736-9199"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Photosensitive tonic-clonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0007270",
+    "lang": "en",
+    "description": [
+     "in 2017 the ILAE Commission for Classification and Terminology recommended classifying a seizure as having focal or generalized onset only when there is a high degree of confidence (over 80%, arbitrarily chosen to parallel the usual allowable beta error) in the accuracy of this determination; see Dialeptic seizure.",
+     "An atypical absence seizure is a type of generalized non-motor (absence) seizure characterized by interruption of ongoing activities and reduced responsiveness. In comparison to a typical absence seizure, changes in tone may be more pronounced, onset and/or cessation may be less abrupt, and the duration of the ictus and post-ictal recovery may be longer. Although not always available, an EEG often demonstrates slow (<3 Hz), irregular, generalized spike-wave activity."
+    ],
+    "synonyms": [
+     "Atypical absence",
+     "Atypical absence seizures",
+     "Atypical petit mal seizures"
+    ],
+    "annotation": {
+     "id": [
+      "HP:0007270"
+     ]
+    },
+    "label": "Atypical absence seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0007270",
+    "obo_id": "HP:0007270",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "An atypical absence seizure is a type of generalized non-motor (absence) seizure characterized by interruption of ongoing activities and reduced responsiveness. In comparison to a typical absence seizure, changes in tone may be more pronounced, onset and/or cessation may be less abrupt, and the duration of the ictus and post-ictal recovery may be longer. Although not always available, an EEG often demonstrates slow (<3 Hz), irregular, generalized spike-wave activity.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-0736-9199",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-0736-9199"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276062",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276062"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       },
+       {
+        "database": "PMID",
+        "id": "6790275",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6790275"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Atypical absence seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     },
+     {
+      "name": "Atypical petit mal seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0001-6908-9849",
+        "description": null,
+        "url": "https://orcid.org/0000-0001-6908-9849"
+       }
+      ]
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0010818",
+    "lang": "en",
+    "description": [
+     "Characterized by a sudden increase in muscle tone whereby the body, arms, or legs make sudden stiffening movements and consciousness is usually preserved. Tonic seizures can occur during sleep. Tonic seizures usually affect both sides of the body, and cause a fall if the affected person was standing when the seizure started.",
+     "A generalized tonic seizure is a type of generalized motor seizure characterized by bilateral limb stiffening or elevation, often with neck stiffening without a subsequent clonic phase. The tonic activity can be a sustained abnormal posture, either in extension or flexion, sometimes accompanied by tremor of the extremities."
+    ],
+    "synonyms": [
+     "Generalised hypertonic seizure",
+     "Generalized hypertonic seizure",
+     "Hypertonic seizures",
+     "Generalised tonic seizure",
+     "Generalised tonic seizures",
+     "Generalized tonic seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2010-07-10T03:03:51Z"
+     ],
+     "has_alternative_id": [
+      "HP:0002184"
+     ],
+     "id": [
+      "HP:0010818"
+     ]
+    },
+    "label": "Generalized tonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0010818",
+    "obo_id": "HP:0010818",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized tonic seizure is a type of generalized motor seizure characterized by bilateral limb stiffening or elevation, often with neck stiffening without a subsequent clonic phase. The tonic activity can be a sustained abnormal posture, either in extension or flexion, sometimes accompanied by tremor of the extremities.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-0736-9199",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-0736-9199"
+       },
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "11580774",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11580774"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Generalised tonic seizure",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Generalised tonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Generalized tonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011147",
+    "lang": "en",
+    "description": [
+     "In 2017 the ILAE Commission for Classification and Terminology recommended classifying a seizure as having focal or generalized onset only when there is a high degree of confidence (>80%, arbitrarily chosen to parallel the usual allowable beta error) in the accuracy of this determination; see Dialeptic seizure. Typical absences have 2 essential components: (1) clinically the impairment of consciousness (absence), and (2) EEG generalized 3 Hz to 4 Hz (less than 2.5 Hz) spike and slow wave discharges.",
+     "A typical absence seizure is a type of generalized non-motor (absence) seizure characterized by its sudden onset, interruption of ongoing activities, a blank stare, possibly a brief upward deviation of the eyes. Usually the patient will be unresponsive when spoken to. Duration is a few seconds to half a minute with very rapid recovery. Although not always available, an EEG would usually show 3 Hz generalized epileptiform discharges during the event."
+    ],
+    "synonyms": [
+     "Typical absence",
+     "Typical absence seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2011-10-18T01:52:22Z"
+     ],
+     "id": [
+      "HP:0011147"
+     ]
+    },
+    "label": "Typical absence seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0011147",
+    "obo_id": "HP:0011147",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A typical absence seizure is a type of generalized non-motor (absence) seizure characterized by its sudden onset, interruption of ongoing activities, a blank stare, possibly a brief upward deviation of the eyes. Usually the patient will be unresponsive when spoken to. Duration is a few seconds to half a minute with very rapid recovery. Although not always available, an EEG would usually show 3 Hz generalized epileptiform discharges during the event.",
+      "oboXrefs": [
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276062",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276062"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       },
+       {
+        "database": "PMID",
+        "id": "6790275",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6790275"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Typical absence seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011149",
+    "lang": "en",
+    "description": [
+     "This type of seizure was classified as a type of generalized non-motor seizure by the ILAE in 2017 because the absence predominates over the eyelid myoclonia. However, eyelid myoclonia can occur as a generalized-onset seizure without any absence, in which they may be better considered a motor seizure: see Eyelid myoclonia seizure.",
+     "An absence with eyelid myoclonia seizure is a type of generalized non-motor (absence) seizure characterized by forced upward jerking of the eyelids during an absence seizure."
+    ],
+    "synonyms": [
+     "Absence seizures with eyelid myoclonia"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2011-10-18T02:03:21Z"
+     ],
+     "id": [
+      "HP:0011149"
+     ]
+    },
+    "label": "Absence seizure with eyelid myoclonia",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0011149",
+    "obo_id": "HP:0011149",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "An absence with eyelid myoclonia seizure is a type of generalized non-motor (absence) seizure characterized by forced upward jerking of the eyelids during an absence seizure.",
+      "oboXrefs": [
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "19469840",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19469840"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276062",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276062"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Absence seizures with eyelid myoclonia",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011150",
+    "lang": "en",
+    "description": [
+     "Myoclonic absence seizure is a type of generalized non-motor (absence) seizure characterized by an interruption of ongoing activities, a blank stare and rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with 3 Hz generalized spike-wave discharges on the electroencephalogram. Duration is typically 10-60 s. Whilst impairment of consciousness may not be obvious the ILAE classified this seizure as a generalized non-motor seizure in 2017."
+    ],
+    "synonyms": [
+     "Myoclonic absence",
+     "Myoclonic absences"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2011-10-18T02:04:35Z"
+     ],
+     "id": [
+      "HP:0011150"
+     ]
+    },
+    "label": "Myoclonic absence seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0011150",
+    "obo_id": "HP:0011150",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Myoclonic absence seizure is a type of generalized non-motor (absence) seizure characterized by an interruption of ongoing activities, a blank stare and rhythmic three-per-second myoclonic movements, causing ratcheting abduction of the upper limbs leading to progressive arm elevation, and associated with 3 Hz generalized spike-wave discharges on the electroencephalogram. Duration is typically 10-60 s. Whilst impairment of consciousness may not be obvious the ILAE classified this seizure as a generalized non-motor seizure in 2017.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0001-8486-0558",
+        "description": null,
+        "url": "https://orcid.org/0000-0001-8486-0558"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276062",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276062"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       },
+       {
+        "database": "PMID",
+        "id": "9637609",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9637609"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Myoclonic absences",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011152",
+    "lang": "en",
+    "description": [
+     "Typical absence seizures starting before the age of 4 years."
+    ],
+    "synonyms": [
+     "Early onset petit mal seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2011-10-18T02:12:41Z"
+     ],
+     "id": [
+      "HP:0011152"
+     ]
+    },
+    "label": "Early onset absence seizures",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0011152",
+    "obo_id": "HP:0011152",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Typical absence seizures starting before the age of 4 years.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0001-8486-0558",
+        "description": null,
+        "url": "https://orcid.org/0000-0001-8486-0558"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Early onset petit mal seizures",
+      "scope": "hasExactSynonym",
+      "type": null,
+      "xrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0001-6908-9849",
+        "description": null,
+        "url": "https://orcid.org/0000-0001-6908-9849"
+       }
+      ]
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011169",
+    "lang": "en",
+    "description": [
+     "Generalized clonic seizures are much less common than are tonic-clonic seizures, usually occur in infants, and should be distinguished from jitteriness or shuddering attacks.",
+     "Generalized clonic seizure is a type of generalized motor seizure characterized by sustained bilateral jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups."
+    ],
+    "synonyms": [
+     "Generalised clonic seizure",
+     "Generalised onset clonic seizure",
+     "Generalised-onset clonic seizure",
+     "Generalized onset clonic seizure",
+     "Generalized-onset clonic seizure",
+     "Generalised clonic seizures",
+     "Generalized clonic seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-6996-5279"
+     ],
+     "Date": [
+      "2011-11-19T09:53:43Z"
+     ],
+     "id": [
+      "HP:0011169"
+     ]
+    },
+    "label": "Generalized clonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0011169",
+    "obo_id": "HP:0011169",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Generalized clonic seizure is a type of generalized motor seizure characterized by sustained bilateral jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups.",
+      "oboXrefs": [
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Generalised clonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Generalized clonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0011170",
+    "lang": "en",
+    "description": [
+     "A myoclonic-tonic seizure was previously called a myoclonic-astatic seizure. ILAE2017 does not currently consider myoclonic-atonic seizures to be a form of myoclonic seizure which is why it is classified as a motor seizure.",
+     "A generalized myoclonic-atonic seizure is a type of generalized motor seizure characterized by a myoclonic jerk followed by an atonic motor component."
+    ],
+    "synonyms": [
+     "Generalised myoclonic-atonic seizure",
+     "Myoclonic-astatic seizure",
+     "Myoclonic atonic seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-6996-5279"
+     ],
+     "Date": [
+      "2011-11-19T10:00:46Z"
+     ],
+     "id": [
+      "HP:0011170"
+     ]
+    },
+    "label": "Generalized myoclonic-atonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0011170",
+    "obo_id": "HP:0011170",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized myoclonic-atonic seizure is a type of generalized motor seizure characterized by a myoclonic jerk followed by an atonic motor component.",
+      "oboXrefs": [
+       {
+        "database": "HPO_CONTRIBUTOR",
+        "id": "jalbers",
+        "description": null,
+        "url": null
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Myoclonic atonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "plural form",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0025190",
+    "lang": "en",
+    "description": [
+     "A bilateral tonic-clonic seizure with generalized onset is a type of bilateral tonic-clonic seizure characterized by generalized onset; these seizures rapidly engage networks in both hemispheres at the start of the seizure."
+    ],
+    "synonyms": [
+     "Generalised tonic-clonic seizure without focal onset",
+     "Generalised tonic-clonic seizure without partial onset",
+     "Generalised tonic-clonic seizures without focal onset",
+     "Generalised-onset tonic-clonic seizure",
+     "Generalized tonic-clonic seizure without focal onset",
+     "Generalized tonic-clonic seizure without partial onset",
+     "Generalized tonic-clonic seizures without focal onset",
+     "Generalized-onset tonic-clonic seizure",
+     "Primarily generalized tonic-clonic seizures",
+     "Primary generalized tonic-clonic seizure",
+     "Primary generalized tonic-clonic seizures",
+     "Bilateral tonic-clonic seizure with generalised onset",
+     "Primarily generalised tonic-clonic seizures",
+     "Primary generalised tonic-clonic seizure",
+     "Primary generalised tonic-clonic seizures"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2016-12-04T22:50:21Z"
+     ]
+    },
+    "label": "Bilateral tonic-clonic seizure with generalized onset",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0025190",
+    "obo_id": "HP:0025190",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A bilateral tonic-clonic seizure with generalized onset is a type of bilateral tonic-clonic seizure characterized by generalized onset; these seizures rapidly engage networks in both hemispheres at the start of the seizure.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "20196795",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20196795"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       },
+       {
+        "database": "PMID",
+        "id": "6790275",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6790275"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Bilateral tonic-clonic seizure with generalised onset",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Primarily generalised tonic-clonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Primary generalised tonic-clonic seizure",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     },
+     {
+      "name": "Primary generalised tonic-clonic seizures",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032661",
+    "lang": "en",
+    "description": [
+     "A type of bilateral convulsive seizure of generalized onset that is sufficiently prolonged (or repeated without recovery) to reach the threshold for status epilepticus."
+    ],
+    "synonyms": [
+     "Generalised convulsive status epilepticus"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-02-22T11:16:38Z"
+     ]
+    },
+    "label": "Generalized convulsive status epilepticus",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0032661",
+    "obo_id": "HP:0032661",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A type of bilateral convulsive seizure of generalized onset that is sufficiently prolonged (or repeated without recovery) to reach the threshold for status epilepticus.",
+      "oboXrefs": [
+       {
+        "database": null,
+        "id": "https://orcid.org/0000-0002-1735-8178",
+        "description": null,
+        "url": "https://orcid.org/0000-0002-1735-8178"
+       },
+       {
+        "database": "PMID",
+        "id": "26336950",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26336950"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "Generalised convulsive status epilepticus",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032677",
+    "lang": "en",
+    "description": [
+     "A generalized motor seizure is a type of generalized-onset seizure with predominantly motor (involving musculature) signs. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement."
+    ],
+    "synonyms": [
+     "Generalised onset motor seizure",
+     "Generalised-onset motor seizure",
+     "Generalized onset motor seizure"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-14T07:11:14Z"
+     ]
+    },
+    "label": "Generalized-onset motor seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0032677",
+    "obo_id": "HP:0032677",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized motor seizure is a type of generalized-onset seizure with predominantly motor (involving musculature) signs. The motor event could consist of an increase (positive) or decrease (negative) in muscle contraction to produce a movement.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "11580774",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11580774"
+       },
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032678",
+    "lang": "en",
+    "description": [
+     "An eyelid myoclonia seizure is a type of generalized myoclonic seizure which may or may not be associated with loss of awareness."
+    ],
+    "synonyms": [],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-14T07:17:13Z"
+     ]
+    },
+    "label": "Eyelid myoclonia seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0032678",
+    "obo_id": "HP:0032678",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "An eyelid myoclonia seizure is a type of generalized myoclonic seizure which may or may not be associated with loss of awareness.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "19469840",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19469840"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032795",
+    "lang": "en",
+    "description": [
+     "A generalized myoclonic-tonic-clonic seizure is a type of generalized motor seizure characterized by a single or multiple jerks of limbs bilaterally, followed by tonic and clonic phases. The initial jerks can be considered to be either a brief period of clonus or myoclonus."
+    ],
+    "synonyms": [
+     "Generalised myoclonic-tonic-clonic seizure",
+     "Generalised-onset myoclonic-tonic-clonic seizure",
+     "Generalized-onset myoclonic-tonic-clonic seizure",
+     "generalized onset myoclonic-tonic-clonic seizure",
+     "generalised onset myoclonic-tonic-clonic seizure"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-16T13:34:52Z"
+     ]
+    },
+    "label": "Generalized myoclonic-tonic-clonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "HP_0032795",
+    "obo_id": "HP:0032795",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A generalized myoclonic-tonic-clonic seizure is a type of generalized motor seizure characterized by a single or multiple jerks of limbs bilaterally, followed by tonic and clonic phases. The initial jerks can be considered to be either a brief period of clonus or myoclonus.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": [
+     {
+      "name": "generalised onset myoclonic-tonic-clonic seizure",
+      "scope": "hasExactSynonym",
+      "type": "UK spelling",
+      "xrefs": []
+     }
+    ],
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032842",
+    "lang": "en",
+    "description": [
+     "A type of epileptic spasm of generalized onset."
+    ],
+    "synonyms": [
+     "Generalised onset epileptic spasm",
+     "Generalised-onset epileptic spasm",
+     "Generalized onset epileptic spasm"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-17T11:49:52Z"
+     ]
+    },
+    "label": "Generalized-onset epileptic spasm",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0032842",
+    "obo_id": "HP:0032842",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "A type of epileptic spasm of generalized onset.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032855",
+    "lang": "en",
+    "description": [
+     "Generalised myoclonic-tonic-clonic seizure provoked by flashing or flickering light."
+    ],
+    "synonyms": [
+     "Photically induced myoclonic-tonic-clonic seizure"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-17T19:17:07Z"
+     ]
+    },
+    "label": "Photosensitive myoclonic-tonic-clonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0032855",
+    "obo_id": "HP:0032855",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Generalised myoclonic-tonic-clonic seizure provoked by flashing or flickering light.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://purl.obolibrary.org/obo/HP_0032887",
+    "lang": "en",
+    "description": [
+     "Atonic means without tone. When leg tone is lost during a generalized atonic seizure, the patient falls on the buttocks or sometimes forward onto the knees and face. Recovery is usually within seconds.",
+     "Generalized atonic seizure is a type of generalized motor seizure characterized by a sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting about 1-2 s, involving head, trunk, jaw, or limb musculature."
+    ],
+    "synonyms": [
+     "Generalised atonic seizure"
+    ],
+    "annotation": {
+     "Creator": [
+      "https://orcid.org/0000-0002-0736-9199"
+     ],
+     "Date": [
+      "2020-03-18T10:30:46Z"
+     ]
+    },
+    "label": "Generalized atonic seizure",
+    "ontology_name": "hp",
+    "ontology_prefix": "HP",
+    "ontology_iri": "http://purl.obolibrary.org/obo/hp/hp-international.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "HP_0032887",
+    "obo_id": "HP:0032887",
+    "in_subset": null,
+    "obo_definition_citation": [
+     {
+      "definition": "Generalized atonic seizure is a type of generalized motor seizure characterized by a sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic event lasting about 1-2 s, involving head, trunk, jaw, or limb musculature.",
+      "oboXrefs": [
+       {
+        "database": "PMID",
+        "id": "28276060",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276060"
+       },
+       {
+        "database": "PMID",
+        "id": "28276064",
+        "description": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28276064"
+       }
+      ]
+     }
+    ],
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   }
+  ]
+ },
+ "page": {
+  "size": 500,
+  "totalElements": 20,
+  "totalPages": 1,
+  "number": 0
+ }
+}

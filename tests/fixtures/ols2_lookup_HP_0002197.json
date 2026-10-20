@@ -1,0 +1,48 @@
+{
+ "page": 0,
+ "numElements": 1,
+ "totalPages": 1,
+ "totalElements": 1,
+ "elements": [
+  {
+   "curie": "HP:0002197",
+   "definedBy": [
+    "hp"
+   ],
+   "definition": [
+    "in 2017 the ILAE Commission for Classification and Terminology recommended classifying a seizure as having focal or generalized onset only when there is a high degree of confidence (over 80%, arbitrarily chosen to parallel the usual allowable beta error) in the accuracy of this determination. Classifying a seizure as having apparently generalized onset does not rule out a focal-onset obscured by limitations of our current clinical methods.",
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "A generalized-onset seizure is a type of seizure originating at some point within, and rapidly engaging, bilaterally distributed networks. The networks may include cortical and subcortical structures but not necessarily the entire cortex.",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": [
+        "https://orcid.org/0000-0002-0736-9199",
+        "PMID:20196795",
+        "PMID:23739099",
+        "PMID:28276060",
+        "PMID:28276064",
+        "PMID:6790275"
+       ]
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/HP_0002197",
+   "isDefiningOntology": true,
+   "label": [
+    "Generalized-onset seizure"
+   ],
+   "ontologyId": "hp",
+   "ontologyPreferredPrefix": "HP",
+   "shortForm": "HP_0002197",
+   "type": [
+    "class",
+    "entity"
+   ]
+  }
+ ],
+ "facetFieldsToCounts": {}
+}

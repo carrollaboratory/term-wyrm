@@ -1,0 +1,10 @@
+{
+ "pageSize": 25,
+ "pageNumber": 1,
+ "result": {
+  "classType": "searchResults",
+  "results": [],
+  "recCount": 0
+ },
+ "partialSearch": "https://uts-ws.nlm.nih.gov/rest/search/current?returnIdType=code&sabs[]=HPO&string=zzzxqqnotaterm&partialSearch=true"
+}

@@ -1,0 +1,386 @@
+{
+ "_embedded": {
+  "terms": [
+   {
+    "iri": "http://edamontology.org/topic_0102",
+    "lang": "en",
+    "description": [
+     "The mapping of complete (typically nucleotide) sequences. Mapping (in the sense of short read alignment, or more generally, just alignment) has application in RNA-Seq analysis (mapping of transcriptomics reads), variant discovery (e.g. mapping of exome capture), and re-sequencing (mapping of WGS reads)."
+    ],
+    "synonyms": [
+     "Genetic linkage",
+     "Linkage mapping",
+     "Linkage",
+     "Synteny"
+    ],
+    "annotation": {
+     "Created in": [
+      "beta12orEarlier"
+     ],
+     "comment": [
+      "This includes resources that aim to identify, map or analyse genetic markers in DNA sequences, for example to produce a genetic (linkage) map of a chromosome or genome or to analyse genetic linkage and synteny. It also includes resources for physical (sequence) maps of a DNA sequence showing the physical distance (base pairs) between features or landmarks such as restriction sites, cloned DNA fragments, genes and other genetic markers. It also covers for example the alignment of sequences of (typically millions) of short reads to a reference genome."
+     ],
+     "hasHumanReadableId": [
+      "Mapping"
+     ],
+     "isdebtag": [
+      true
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Gene_mapping"
+     ]
+    },
+    "label": "Mapping",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_0102",
+    "obo_id": "EDAM_topic:0102",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_0157",
+    "lang": "en",
+    "description": [
+     "The archival, processing and analysis of the basic character composition of molecular sequences, for example character or word frequency, ambiguity, complexity, particularly regions of low complexity, and repeats or the repetitive nature of molecular sequences."
+    ],
+    "synonyms": [
+     "Low complexity sequences",
+     "Nucleic acid repeats",
+     "Protein repeats",
+     "Protein sequence repeats",
+     "Repeat sequences",
+     "Sequence complexity",
+     "Sequence composition",
+     "Sequence repeats"
+    ],
+    "annotation": {
+     "Created in": [
+      "beta12orEarlier"
+     ],
+     "comment": [
+      "This includes repetitive elements within a nucleic acid sequence, e.g. long terminal repeats (LTRs); sequences (typically retroviral) directly repeated at both ends of a sequence and other types of repeating unit.",
+      "This includes short repetitive subsequences (repeat sequences) in a protein sequence."
+     ],
+     "hasHumanReadableId": [
+      "Sequence_composition_complexity_and_repeats"
+     ],
+     "isdebtag": [
+      true
+     ]
+    },
+    "label": "Sequence composition, complexity and repeats",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_0157",
+    "obo_id": "EDAM_topic:0157",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_0194",
+    "lang": "en",
+    "description": [
+     "The integrated study of evolutionary relationships and whole genome data, for example, in the analysis of species trees, horizontal gene transfer and evolutionary reconstruction."
+    ],
+    "synonyms": [],
+    "annotation": {
+     "Created in": [
+      "beta12orEarlier"
+     ],
+     "hasHumanReadableId": [
+      "Phylogenomics"
+     ],
+     "isdebtag": [
+      true
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Phylogenomics"
+     ]
+    },
+    "label": "Phylogenomics",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_0194",
+    "obo_id": "EDAM_topic:0194",
+    "in_subset": [
+     "bio",
+     "events",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_0196",
+    "lang": "en",
+    "description": [
+     "The assembly of fragments of a DNA sequence to reconstruct the original sequence."
+    ],
+    "synonyms": [
+     "Assembly"
+    ],
+    "annotation": {
+     "Created in": [
+      "beta12orEarlier"
+     ],
+     "comment": [
+      "Assembly has two broad types, de-novo and re-sequencing. Re-sequencing is a specialised case of assembly, where an assembled (typically de-novo assembled) reference genome is available and is about 95% identical to the re-sequenced genome. All other cases of assembly are 'de-novo'."
+     ],
+     "hasHumanReadableId": [
+      "Sequence_assembly"
+     ],
+     "isdebtag": [
+      true
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Sequence_assembly"
+     ]
+    },
+    "label": "Sequence assembly",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_0196",
+    "obo_id": "EDAM_topic:0196",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_0632",
+    "lang": "en",
+    "description": [
+     "Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence."
+    ],
+    "synonyms": [
+     "Primer quality",
+     "Primers",
+     "Probes"
+    ],
+    "annotation": {
+     "Created in": [
+      "beta12orEarlier"
+     ],
+     "comment": [
+      "This includes the design of primers for PCR and DNA amplification or the design of molecular probes."
+     ],
+     "hasHumanReadableId": [
+      "Probes_and_primers"
+     ],
+     "isdebtag": [
+      true
+     ],
+     "seeAlso": [
+      "http://purl.bioontology.org/ontology/MSH/D015335"
+     ]
+    },
+    "label": "Probes and primers",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_0632",
+    "obo_id": "EDAM_topic:0632",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_3293",
+    "lang": "en",
+    "description": [
+     "The study of evolutionary relationships amongst organisms from analysis of genetic information (typically gene or protein sequences)."
+    ],
+    "synonyms": [],
+    "annotation": {
+     "Created in": [
+      "1.3"
+     ],
+     "hasHumanReadableId": [
+      "Phylogenetics"
+     ],
+     "isdebtag": [
+      true
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Phylogenetics"
+     ]
+    },
+    "label": "Phylogenetics",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_3293",
+    "obo_id": "EDAM_topic:3293",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_3944",
+    "lang": "en",
+    "description": [
+     "The biological classification of organisms by categorizing them in groups (\"clades\") based on their most recent common ancestor."
+    ],
+    "synonyms": [
+     "Tree of life"
+    ],
+    "annotation": {
+     "Created in": [
+      "1.24"
+     ],
+     "hasHumanReadableId": [
+      "Cladistics"
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Cladistics"
+     ]
+    },
+    "label": "Cladistics",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_3944",
+    "obo_id": "EDAM_topic:3944",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   },
+   {
+    "iri": "http://edamontology.org/topic_4038",
+    "lang": "en",
+    "description": [
+     "Metabarcoding is the barcoding of (environmental) DNA or RNA to identify multiple taxa from the same sample."
+    ],
+    "synonyms": [
+     "DNA metabarcoding",
+     "Environmental metabarcoding",
+     "RNA metabarcoding",
+     "eDNA metabarcoding",
+     "eRNA metabarcoding"
+    ],
+    "annotation": {
+     "Created in": [
+      "1.26"
+     ],
+     "Related term": [
+      "Environmental DNA (eDNA)",
+      "Environmental RNA (eRNA)",
+      "Environmental sequencing",
+      "Taxonomic profiling"
+     ],
+     "comment": [
+      "Typically, high-throughput sequencing is performed and the resulting sequence reads are matched to DNA barcodes in a reference database."
+     ],
+     "has exact match": [
+      "https://www.wikidata.org/wiki/Q51237016"
+     ],
+     "has related match": [
+      "https://www.wikidata.org/wiki/Q25098939"
+     ],
+     "seeAlso": [
+      "https://en.wikipedia.org/wiki/Environmental_DNA",
+      "https://en.wikipedia.org/wiki/Metabarcoding"
+     ]
+    },
+    "label": "Metabarcoding",
+    "ontology_name": "edam",
+    "ontology_prefix": "EDAM",
+    "ontology_iri": "http://edamontology.org",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "EDAM_topic_4038",
+    "obo_id": "EDAM_topic:4038",
+    "in_subset": [
+     "bio",
+     "topics"
+    ],
+    "obo_definition_citation": null,
+    "obo_xref": null,
+    "obo_synonym": null,
+    "is_preferred_root": false
+   }
+  ]
+ },
+ "page": {
+  "size": 500,
+  "totalElements": 8,
+  "totalPages": 1,
+  "number": 0
+ }
+}

@@ -11,7 +11,7 @@ import os
 from collections.abc import Iterator
 from importlib.resources import files
 from importlib.resources.abc import Traversable
-from typing import IO
+from typing import IO, NamedTuple
 
 from term_wyrm.vocabulary.manager import VocabularyManager
 from term_wyrm.vocabulary.vocabulary import SourceType, Vocabulary
@@ -31,7 +31,7 @@ DETAILS_FIELDS = (
     "synonym",
     "api_preference",
 )
-LEGACY_FIELDS = ("curie", "system")
+LEGACY_FIELDS = ("curie", "system")  # api_preference is optional
 
 _DATA = files("term_wyrm.data")
 DEFAULT_DETAILS = _DATA / "vocabulary_details.csv"
@@ -108,15 +108,25 @@ def read_details(source: Source) -> list[Vocabulary]:
     return [vocabulary_from_row(row) for row in _read_rows(source, DETAILS_FIELDS)]
 
 
-def read_legacy(source: Source) -> list[tuple[str, str]]:
+class LegacyRow(NamedTuple):
+    prefix: str
+    system: str
+    api_prefixes: dict[str, str]
+
+
+def read_legacy(source: Source) -> list[LegacyRow]:
     return [
-        (row["curie"], row["system"])
+        LegacyRow(
+            row["curie"],
+            row["system"],
+            parse_api_preference(row.get("api_preference", "")),
+        )
         for row in _read_rows(source, LEGACY_FIELDS)
         if row["curie"] and row["system"]
     ]
 
 
-def backfill_legacy(manager: VocabularyManager, rows: list[tuple[str, str]]) -> None:
+def backfill_legacy(manager: VocabularyManager, rows: list[LegacyRow]) -> None:
     """Merge legacy rows into ``manager`` in two passes.
 
     Pass 1 handles rows whose prefix is already known, so their systems are
@@ -125,15 +135,15 @@ def backfill_legacy(manager: VocabularyManager, rows: list[tuple[str, str]]) -> 
     or a stub created earlier in the pass (``ORDO`` after ``ORPHANET``).
     """
     remaining = []
-    for prefix, system in rows:
-        if prefix in manager:
-            manager.merge_legacy(prefix, system)
+    for row in rows:
+        if row.prefix in manager:
+            manager.merge_legacy(*row)
         else:
-            remaining.append((prefix, system))
+            remaining.append(row)
 
     stubs_before = len(manager)
-    for prefix, system in remaining:
-        manager.merge_legacy(prefix, system)
+    for row in remaining:
+        manager.merge_legacy(*row)
     logger.debug(
         "Legacy backfill: %d rows, %d stub vocabularies",
         len(rows),

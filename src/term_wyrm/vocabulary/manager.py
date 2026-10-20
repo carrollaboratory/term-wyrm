@@ -1,8 +1,11 @@
-from collections.abc import Iterable, Iterator
+import logging
+from collections.abc import Iterable, Iterator, Mapping
 from functools import cache
 
 from term_wyrm.vocabulary.curie import Curie
 from term_wyrm.vocabulary.vocabulary import Origin, Vocabulary
+
+logger = logging.getLogger(__name__)
 
 
 class VocabularyConflict(ValueError):
@@ -52,6 +55,28 @@ class VocabularyManager:
             voc.alt_systems.append(system)
             self._by_system[system] = voc
 
+    def add_api_prefix(self, voc: Vocabulary, family: str, api_prefix: str) -> None:
+        """Record what an API family calls ``voc``. An existing entry wins, so
+        vocabulary_details.csv takes precedence over the legacy file."""
+        family = family.upper()
+        current = voc.api_prefixes.get(family)
+        if current is not None:
+            if current != api_prefix:
+                logger.warning(
+                    "Ignoring %s:%s for %r; already %s:%s",
+                    family,
+                    api_prefix,
+                    voc.prefix,
+                    family,
+                    current,
+                )
+            return
+        if api_prefix:
+            key = api_prefix.casefold()
+            self._check_claim(self._by_name, key, voc, "name")
+            self._by_name[key] = voc
+        voc.api_prefixes[family] = api_prefix
+
     @staticmethod
     def _check_claim(index, key, voc, kind):
         owner = index.get(key)
@@ -60,11 +85,17 @@ class VocabularyManager:
                 f"{kind} {key!r} is claimed by both {owner.prefix!r} and {voc.prefix!r}"
             )
 
-    def merge_legacy(self, prefix: str, system: str) -> Vocabulary:
-        """Fold one legacy ``prefix,system`` pair into the registry.
+    def merge_legacy(
+        self,
+        prefix: str,
+        system: str,
+        api_prefixes: Mapping[str, str] | None = None,
+    ) -> Vocabulary:
+        """Fold one legacy ``prefix,system`` row into the registry.
 
         A known prefix gains the system; a known system gains the prefix as a
-        synonym; otherwise a stub vocabulary is created.
+        synonym; otherwise a stub vocabulary is created. Any ``api_prefixes``
+        are then added to whichever vocabulary the row landed on.
         """
         by_name = self.resolve(prefix)
         by_system = self.by_system(system)
@@ -75,16 +106,23 @@ class VocabularyManager:
             )
         if by_name:
             self.add_system(by_name, system)
-            return by_name
-        if by_system:
+            voc = by_name
+        elif by_system:
             self.add_synonym(by_system, prefix)
-            return by_system
-        return self.add(Vocabulary(prefix=prefix, system=system, origin=Origin.LEGACY))
+            voc = by_system
+        else:
+            voc = self.add(
+                Vocabulary(prefix=prefix, system=system, origin=Origin.LEGACY)
+            )
+        for family, api_prefix in (api_prefixes or {}).items():
+            self.add_api_prefix(voc, family, api_prefix)
+        return voc
 
     # --- lookup -------------------------------------------------------------
 
     def resolve(self, name: str) -> Vocabulary | None:
-        """Find a vocabulary by preferred prefix or synonym, ignoring case."""
+        """Find a vocabulary by preferred prefix, synonym, or API prefix,
+        ignoring case."""
         return self._by_name.get(name.strip().casefold())
 
     def by_system(self, system: str) -> Vocabulary | None:
