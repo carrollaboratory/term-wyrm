@@ -83,6 +83,27 @@ def test_add_synonym_conflict(manager):
         manager.add_synonym(manager["omim"], "SCT")
 
 
+def test_api_prefixes_are_lookup_names(manager):
+    voc = Vocabulary(prefix="NCIT", system="http://ncit", api_prefixes={"UMLS": "NCI"})
+    manager.add(voc)
+    assert manager.resolve("nci") is voc
+
+
+def test_add_api_prefix_keeps_existing(manager, caplog):
+    hp = manager["HP"]
+    manager.add_api_prefix(hp, "umls", "HP")
+    assert hp.api_prefix("UMLS") == "HPO"
+    assert "Ignoring UMLS:HP" in caplog.text
+    manager.add_api_prefix(hp, "OLS", "HPX")
+    assert hp.api_prefix("OLS") == "HPX"
+    assert manager.resolve("hpx") is hp
+
+
+def test_add_api_prefix_conflict(manager):
+    with pytest.raises(VocabularyConflict):
+        manager.add_api_prefix(manager["omim"], "OLS", "SNOMED")
+
+
 class TestMergeLegacy:
     def test_known_prefix_gains_system(self, manager):
         voc = manager.merge_legacy("SNOMED", "file:///snomed-inferred.owl")

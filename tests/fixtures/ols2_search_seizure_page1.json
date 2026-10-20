@@ -1,0 +1,185 @@
+{
+ "page": 1,
+ "numElements": 5,
+ "totalPages": 208,
+ "totalElements": 1040,
+ "elements": [
+  {
+   "curie": "HP:0002349",
+   "definedBy": [
+    "hp"
+   ],
+   "definition": [
+    "In the previous (1981) ILAE classification of seizure types, the term 'simple partial seizure' was used to denote a focal aware seizure. Awareness during a seizure is defined as the patient being fully aware of themself and their environment throughout the seizure, even if immobile. If awareness is preserved throughout, then the seizure is a focal aware seizure. Previously the terms simple partial was used to describe focal aware seizures.",
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "A type of focal-onset seizure in which awareness is preserved. Awareness during a seizure is defined as the patient being fully aware of themself and their environment throughout the seizure, even if immobile.",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": [
+        "https://orcid.org/0000-0002-0736-9199",
+        "https://orcid.org/0000-0002-1735-8178",
+        "PMID:28276060",
+        "PMID:28276062",
+        "PMID:28276064"
+       ]
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/HP_0002349",
+   "isDefiningOntology": true,
+   "label": [
+    "Focal aware seizure"
+   ],
+   "ontologyId": "hp",
+   "ontologyPreferredPrefix": "HP",
+   "shortForm": "HP_0002349",
+   "type": [
+    "class",
+    "entity"
+   ]
+  },
+  {
+   "curie": "HP:0020220",
+   "definedBy": [
+    "hp"
+   ],
+   "definition": [
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "A focal seizure characterized at onset by sudden loss or diminution of muscle tone without apparent preceding myoclonic or tonic activity, typically lasting more than 500 ms but less than 2 seconds. It may involve the head, trunk, jaw or limb musculature.",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": [
+        "https://orcid.org/0000-0002-1735-8178",
+        "PMID:11580774",
+        "PMID:28276060",
+        "PMID:28276064"
+       ]
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/HP_0020220",
+   "isDefiningOntology": true,
+   "label": [
+    "Focal atonic seizure"
+   ],
+   "ontologyId": "hp",
+   "ontologyPreferredPrefix": "HP",
+   "shortForm": "HP_0020220",
+   "type": [
+    "class",
+    "entity"
+   ]
+  },
+  {
+   "curie": "HP:0011169",
+   "definedBy": [
+    "hp"
+   ],
+   "definition": [
+    "Generalized clonic seizures are much less common than are tonic-clonic seizures, usually occur in infants, and should be distinguished from jitteriness or shuddering attacks.",
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "Generalized clonic seizure is a type of generalized motor seizure characterized by sustained bilateral jerking, either symmetric or asymmetric, that is regularly repetitive and involves the same muscle groups.",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": [
+        "HPO_CONTRIBUTOR:jalbers",
+        "PMID:28276060",
+        "PMID:28276064"
+       ]
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/HP_0011169",
+   "isDefiningOntology": true,
+   "label": [
+    "Generalized clonic seizure"
+   ],
+   "ontologyId": "hp",
+   "ontologyPreferredPrefix": "HP",
+   "shortForm": "HP_0011169",
+   "type": [
+    "class",
+    "entity"
+   ]
+  },
+  {
+   "curie": "MONDO:0043264",
+   "definedBy": [
+    "mondo"
+   ],
+   "definition": [
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "Recurrent seizures causally related to CRANIOCEREBRAL TRAUMA. Seizure onset may be immediate but is typically delayed for several days after the injury and may not occur for up to two years. The majority of seizures have a focal onset that correlates clinically with the site of brain injury. Cerebral cortex injuries caused by a penetrating foreign object (CRANIOCEREBRAL TRAUMA, PENETRATING) are more likely than closed head injuries (HEAD INJURIES, CLOSED) to be associated with epilepsy. Concussive convulsions are nonepileptic phenomena that occur immediately after head injury and are characterized by tonic and clonic movements. (From Rev Neurol 1998 Feb;26(150):256-261; Sports Med 1998 Feb;25(2):131-6)",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": "MESH:D004834"
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/MONDO_0043264",
+   "isDefiningOntology": true,
+   "label": [
+    "post-traumatic epilepsy"
+   ],
+   "ontologyId": "mondo",
+   "ontologyPreferredPrefix": "MONDO",
+   "shortForm": "MONDO_0043264",
+   "type": [
+    "class",
+    "entity"
+   ]
+  },
+  {
+   "curie": "HP:0033349",
+   "definedBy": [
+    "hp"
+   ],
+   "definition": [
+    "This term should be used with an HPO term for the appropriate type of seizure to denote clustered occurrence of seizures. There is no consensus within the medical community regarding the definition of a seizure cluster, where limitations of current clinical definitions include poor sensitivity and specificity. The proposed definition is meant to serve as a placeholder until a more robust definition, likely facilitated by technological advances in seizure tracking devices and personalized cluster identification is agreed upon.",
+    {
+     "type": [
+      "reification"
+     ],
+     "value": "A fourfold or greater increase of usual seizure frequency within a 3-day period, where the patient demonstrates full recovery between seizure events within the cluster. The seizure cluster should be recognizable by the primary clinician, carer or patient.",
+     "axioms": [
+      {
+       "http://www.geneontology.org/formats/oboInOwl#hasDbXref": [
+        "PMID:29871784",
+        "PMID:32305858"
+       ]
+      }
+     ]
+    }
+   ],
+   "iri": "http://purl.obolibrary.org/obo/HP_0033349",
+   "isDefiningOntology": true,
+   "label": [
+    "Seizure cluster"
+   ],
+   "ontologyId": "hp",
+   "ontologyPreferredPrefix": "HP",
+   "shortForm": "HP_0033349",
+   "type": [
+    "class",
+    "entity"
+   ]
+  }
+ ],
+ "facetFieldsToCounts": {}
+}

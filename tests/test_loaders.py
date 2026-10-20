@@ -97,6 +97,29 @@ def test_two_pass_backfill(write):
     assert len(m) == 4  # loinc, HP, ORPHANET, MP
 
 
+def test_legacy_api_preference(write):
+    details = write(
+        "v.csv",
+        HEADER
+        + "SNOMED CT,d,snomedct,http://snomed.info/sct,u,,,SNOMED,OLS:SNOMED\n"
+        + "NCIT,d,NCIT,http://ncit.owl,u,,,,UMLS:NCI\n",
+    )
+    legacy = write(
+        "l.csv",
+        "curie,system,api_preference\n"
+        "ORPHANET,http://ordo.owl,\n"
+        'ORDO,http://ordo.owl,"OLS:ORDO"\n'
+        "SNOMED,http://snomed.info/sct,OLS:SCT\n",  # details wins
+    )
+    m = load(details, legacy)
+    orphanet = m["ORPHANET"]
+    assert orphanet.api_prefix("OLS") == "ORDO"  # from a later row of the same stub
+    assert m.to_api("ORPHANET:558", "OLS") == "ORDO:558"
+    assert m["snomedct"].api_prefix("OLS") == "SNOMED"
+    # API prefixes resolve inbound, too.
+    assert m.resolve("NCI") is m["NCIT"]
+
+
 def test_legacy_is_optional(write):
     details = write("v.csv", HEADER + "x,d,X,http://x,u,,,,\n")
     assert len(load(details, None)) == 1
@@ -124,7 +147,8 @@ class TestPackagedData:
             ("MDR", "meddra"),
             ("MSH", "mesh"),
             ("ncbitaxon", "NCBITaxon"),
-            ("ORDO", "ORPHANET"),
+            ("ORPHANET", "ORDO"),
+            ("NCI", "NCIT"),
         ],
     )
     def test_synonyms_resolve_to_preferred_prefix(self, vocab, name, prefix):
@@ -136,6 +160,8 @@ class TestPackagedData:
         assert vocab["snomedct"].api_prefix("UMLS") == "SNOMEDCT_US"
         assert vocab["omim"].api_prefix("UMLS") == ""
         assert vocab["MONDO"].api_prefix("OLS") == "MONDO"
+        assert vocab["NCIT"].api_prefix("UMLS") == "NCI"
+        assert vocab["ORPHANET"].api_prefix("OLS") == "ORDO"
 
     def test_details_vocabularies_are_not_stubs(self, vocab):
         details = [v for v in vocab if not v.is_stub]

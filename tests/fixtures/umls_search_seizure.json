@@ -1,0 +1,160 @@
+{
+ "pageSize": 25,
+ "pageNumber": 1,
+ "result": {
+  "classType": "searchResults",
+  "results": [
+   {
+    "ui": "128613002",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/128613002",
+    "name": "Seizure disorder"
+   },
+   {
+    "ui": "D004827",
+    "rootSource": "MSH",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/D004827",
+    "name": "Epilepsy"
+   },
+   {
+    "ui": "HP:0001250",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0001250",
+    "name": "Seizure"
+   },
+   {
+    "ui": "91175000",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/91175000",
+    "name": "Seizure"
+   },
+   {
+    "ui": "D012640",
+    "rootSource": "MSH",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/D012640",
+    "name": "Seizures"
+   },
+   {
+    "ui": "D003294",
+    "rootSource": "MSH",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/D003294",
+    "name": "Seizures, Febrile"
+   },
+   {
+    "ui": "41497008",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/41497008",
+    "name": "Febrile convulsion"
+   },
+   {
+    "ui": "HP:0002373",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0002373",
+    "name": "Febrile seizure (within the age range of 3 months to 6 years)"
+   },
+   {
+    "ui": "1287669005",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/1287669005",
+    "name": "Temporal lobe epileptic seizure"
+   },
+   {
+    "ui": "79631006",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/79631006",
+    "name": "Absence seizure"
+   },
+   {
+    "ui": "1217136003",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/1217136003",
+    "name": "Tonic-clonic epileptic seizure"
+   },
+   {
+    "ui": "HP:0002069",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0002069",
+    "name": "Bilateral tonic-clonic seizure"
+   },
+   {
+    "ui": "HP:0002133",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0002133",
+    "name": "Status epilepticus"
+   },
+   {
+    "ui": "87476004",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/87476004",
+    "name": "Neonatal seizure"
+   },
+   {
+    "ui": "HP:0032807",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0032807",
+    "name": "Neonatal seizure"
+   },
+   {
+    "ui": "D004830",
+    "rootSource": "MSH",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/D004830",
+    "name": "Epilepsy, Tonic-Clonic"
+   },
+   {
+    "ui": "29753000",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/29753000",
+    "name": "Focal onset epileptic seizure"
+   },
+   {
+    "ui": "HP:0007359",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0007359",
+    "name": "Focal-onset seizure"
+   },
+   {
+    "ui": "246545002",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/246545002",
+    "name": "Generalized onset epileptic seizure"
+   },
+   {
+    "ui": "HP:0002197",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0002197",
+    "name": "Generalized-onset seizure"
+   },
+   {
+    "ui": "HP:0010819",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0010819",
+    "name": "Atonic seizure"
+   },
+   {
+    "ui": "HP:0011153",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0011153",
+    "name": "Focal motor seizure"
+   },
+   {
+    "ui": "128612007",
+    "rootSource": "SNOMEDCT_US",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/SNOMEDCT_US/128612007",
+    "name": "Focal onset motor onset epileptic seizure"
+   },
+   {
+    "ui": "D020938",
+    "rootSource": "MSH",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/MSH/D020938",
+    "name": "Epilepsy, Partial, Motor"
+   },
+   {
+    "ui": "HP:0002349",
+    "rootSource": "HPO",
+    "uri": "https://uts-ws.nlm.nih.gov/rest/content/2026AA/source/HPO/HP:0002349",
+    "name": "Focal aware seizure"
+   }
+  ],
+  "recCount": 636
+ }
+}
