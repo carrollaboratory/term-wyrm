@@ -165,7 +165,7 @@ class SearchService:
 
     @staticmethod
     def _failure(api: SearchAPI, error: Exception) -> ApiFailure:
-        logger.warning("%s failed: %s", api.api_id, error)
+        logger.info("%s failed: %s", api.api_id, error)
         return ApiFailure(api.api_id, str(error), getattr(error, "url", None))
 
     def __repr__(self) -> str:

@@ -88,6 +88,15 @@ class Hierarchy:
     source: str
     skipped: int = 0
 
+    def to_dict(self) -> dict:
+        return {
+            "parent": self.parent.to_dict(),
+            "direct": self.direct,
+            "results": [c.to_dict() for c in self.concepts],
+            "results_count": len(self.concepts),
+            "search_query": self.url,
+        }
+
     def __iter__(self):
         return iter(self.concepts)
 
@@ -102,6 +111,9 @@ class ApiFailure:
     source: str
     error: str
     url: str | None = None  # API keys redacted
+
+    def to_dict(self) -> dict:
+        return {"api": self.source, "error": self.error, "url": self.url}
 
 
 @dataclass(frozen=True, slots=True)
@@ -131,6 +143,18 @@ class SearchResult:
         for concept in self.concepts:
             counts[concept.prefix] = counts.get(concept.prefix, 0) + 1
         return counts
+
+    def to_dict(self) -> dict:
+        """JSON-ready; the field names follow search-dragon's response."""
+        return {
+            "query": self.query,
+            "results": [c.to_dict() for c in self.concepts],
+            "results_per_ontology": self.counts_by_prefix(),
+            "results_count": len(self.concepts),
+            "more_results_available": self.more_available,
+            "search_queries": {api: page.url for api, page in self.pages.items()},
+            "failures": [f.to_dict() for f in self.failures],
+        }
 
     def __iter__(self):
         return iter(self.concepts)
