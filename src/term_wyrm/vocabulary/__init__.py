@@ -1,3 +1,4 @@
+from term_wyrm.vocabulary.coding import Coding, CodingError
 from term_wyrm.vocabulary.curie import Curie
 from term_wyrm.vocabulary.loaders import load
 from term_wyrm.vocabulary.manager import (
@@ -8,6 +9,8 @@ from term_wyrm.vocabulary.manager import (
 from term_wyrm.vocabulary.vocabulary import Origin, SourceType, Vocabulary
 
 __all__ = [
+    "Coding",
+    "CodingError",
     "Curie",
     "Origin",
     "SourceType",

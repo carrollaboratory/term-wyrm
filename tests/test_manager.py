@@ -128,3 +128,36 @@ class TestMergeLegacy:
         manager.merge_legacy("HP", "http://purl.obolibrary.org/obo/hp.owl")
         assert manager["HP"].alt_systems == []
         assert manager["HP"].synonyms == ["HPO"]
+
+
+class TestSystemMatching:
+    @pytest.mark.parametrize(
+        "system",
+        [
+            "http://snomed.info/sct",
+            "https://snomed.info/sct",
+            "http://snomed.info/sct/",
+            "HTTPS://snomed.info/sct//",
+            " http://snomed.info/sct ",
+        ],
+    )
+    def test_ignores_scheme_and_trailing_slash(self, manager, system):
+        assert manager.by_system(system).prefix == "snomedct"
+
+    def test_emitted_system_is_unchanged(self, manager):
+        assert manager.by_system("https://snomed.info/sct/").system == (
+            "http://snomed.info/sct"
+        )
+
+    def test_rest_of_the_url_still_matters(self, manager):
+        assert manager.by_system("http://snomed.info/SCT") is None
+        assert manager.by_system("ftp://snomed.info/sct") is None
+
+    def test_variant_alt_system_is_not_duplicated(self, manager):
+        voc = manager["snomedct"]
+        manager.add_system(voc, "https://snomed.info/sct/")
+        assert voc.alt_systems == []
+
+    def test_variants_conflict_across_vocabularies(self, manager):
+        with pytest.raises(VocabularyConflict):
+            manager.add(Vocabulary(prefix="X", system="https://snomed.info/sct/"))

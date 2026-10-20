@@ -76,8 +76,8 @@ def test_two_pass_backfill(write):
     legacy = write(
         "l.csv",
         "curie,system\n"
-        "LNC,https://loinc.org/\n"
-        "LOINC,https://loinc.org/\n"
+        "LNC,https://loinc.org/rdf/\n"
+        "LOINC,https://loinc.org/rdf/\n"
         "ORPHANET,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl\n"
         "ORDO,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl\n"
         "MP,http://purl.obolibrary.org/obo/mp/mp-international.owl\n"
@@ -86,7 +86,7 @@ def test_two_pass_backfill(write):
     m = load(details, legacy)
 
     assert m.resolve("LNC").prefix == "loinc"
-    assert m["loinc"].alt_systems == ["https://loinc.org/"]
+    assert m["loinc"].alt_systems == ["https://loinc.org/rdf/"]
     assert m["loinc"].origin is Origin.DETAILS
 
     assert m.resolve("ordo") is m["ORPHANET"]

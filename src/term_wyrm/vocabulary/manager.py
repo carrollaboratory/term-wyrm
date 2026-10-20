@@ -2,6 +2,7 @@ import logging
 from collections.abc import Iterable, Iterator, Mapping
 from functools import cache
 
+from term_wyrm.vocabulary.coding import Coding, CodingError
 from term_wyrm.vocabulary.curie import Curie
 from term_wyrm.vocabulary.vocabulary import Origin, Vocabulary
 
@@ -12,16 +13,28 @@ class VocabularyConflict(ValueError):
     """A prefix, synonym, or system is claimed by two different vocabularies."""
 
 
+def system_key(system: str) -> str:
+    """Index key for a system URL: stored data mixes ``http``/``https`` and
+    trailing slashes, so both are ignored when matching."""
+    system = system.strip()
+    scheme, sep, rest = system.partition("://")
+    if sep and scheme.lower() in ("http", "https"):
+        system = rest
+    return system.rstrip("/")
+
+
 class VocabularyManager:
     """Registry of vocabularies with case-insensitive prefix/synonym lookup.
 
-    Lookups ignore case; anything emitted uses ``Vocabulary.prefix`` verbatim.
+    Name lookups ignore case and system lookups ignore ``http``/``https`` and
+    trailing slashes (``system_key``); anything emitted uses
+    ``Vocabulary.prefix`` and ``Vocabulary.system`` verbatim.
     """
 
     def __init__(self, vocabularies: Iterable[Vocabulary] = ()):
         self._vocabularies: dict[str, Vocabulary] = {}  # preferred prefix
         self._by_name: dict[str, Vocabulary] = {}  # casefolded prefix/synonym
-        self._by_system: dict[str, Vocabulary] = {}
+        self._by_system: dict[str, Vocabulary] = {}  # system_key(system)
         for voc in vocabularies:
             self.add(voc)
 
@@ -33,13 +46,13 @@ class VocabularyManager:
         for name in voc.names:
             self._check_claim(self._by_name, name.casefold(), voc, "name")
         for system in voc.systems:
-            self._check_claim(self._by_system, system, voc, "system")
+            self._check_claim(self._by_system, system_key(system), voc, "system")
 
         self._vocabularies[voc.prefix] = voc
         for name in voc.names:
             self._by_name[name.casefold()] = voc
         for system in voc.systems:
-            self._by_system[system] = voc
+            self._by_system[system_key(system)] = voc
         return voc
 
     def add_synonym(self, voc: Vocabulary, synonym: str) -> None:
@@ -50,10 +63,11 @@ class VocabularyManager:
             self._by_name[key] = voc
 
     def add_system(self, voc: Vocabulary, system: str) -> None:
-        self._check_claim(self._by_system, system, voc, "system")
-        if system not in self._by_system:
+        key = system_key(system)
+        self._check_claim(self._by_system, key, voc, "system")
+        if key not in self._by_system:
             voc.alt_systems.append(system)
-            self._by_system[system] = voc
+            self._by_system[key] = voc
 
     def add_api_prefix(self, voc: Vocabulary, family: str, api_prefix: str) -> None:
         """Record what an API family calls ``voc``. An existing entry wins, so
@@ -126,7 +140,7 @@ class VocabularyManager:
         return self._by_name.get(name.strip().casefold())
 
     def by_system(self, system: str) -> Vocabulary | None:
-        return self._by_system.get(system.strip())
+        return self._by_system.get(system_key(system))
 
     def __getitem__(self, name: str) -> Vocabulary:
         voc = self.resolve(name)
@@ -160,6 +174,50 @@ class VocabularyManager:
             curie = Curie.parse(curie)
         api_prefix = self[curie.prefix].api_prefix(family)
         return f"{api_prefix}:{curie.local_id}" if api_prefix else curie.local_id
+
+    # --- codings from outside (user files, stored data) ---------------------
+
+    def harmonize_coding(
+        self, code: str, system: str | None = None, *, strict: bool = True
+    ) -> Coding:
+        """Rewrite a code/system pair to the preferred CURIE and main system.
+
+        The vocabulary comes from the code's CURIE prefix. A bare code (older
+        data) takes it from ``system`` instead. Raises CodingError when neither
+        identifies a known vocabulary, or when the code has an unknown prefix
+        (even if the system is known: the prefix may be a typo or part of the
+        code).
+
+        If the prefix and a known system name different vocabularies, strict
+        mode raises; otherwise the prefix wins, with a warning. An unknown
+        system next to a known prefix is just replaced.
+        """
+        code = code.strip()
+        system = system.strip() if system else None
+        if not code:
+            raise CodingError(code, system, "empty code")
+        by_system = self.by_system(system) if system else None
+
+        if ":" not in code:
+            if by_system is None:
+                reason = "unknown system" if system else "bare code and no system"
+                raise CodingError(code, system, reason)
+            return Coding(f"{by_system.prefix}:{code}", by_system.system, by_system)
+
+        curie = Curie.try_parse(code)
+        if curie is None:
+            raise CodingError(code, system, "malformed CURIE")
+        voc = self.resolve(curie.prefix)
+        if voc is None:
+            raise CodingError(code, system, f"unknown prefix {curie.prefix!r}")
+        if by_system is not None and by_system is not voc:
+            message = (
+                f"prefix is {voc.prefix!r} but the system is {by_system.prefix!r}'s"
+            )
+            if strict:
+                raise CodingError(code, system, message)
+            logger.warning("%s (%s): %s; using the prefix", code, system, message)
+        return Coding(f"{voc.prefix}:{curie.local_id}", voc.system, voc)
 
 
 @cache
