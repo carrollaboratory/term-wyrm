@@ -2,6 +2,8 @@
 
 from importlib.metadata import PackageNotFoundError, version
 
+from term_wyrm.model import ApiFailure, Concept, Hierarchy, SearchPage, SearchResult
+from term_wyrm.service import SearchService
 from term_wyrm.vocabulary import (
     Curie,
     Origin,
@@ -19,8 +21,14 @@ except PackageNotFoundError:  # running from a source tree that isn't installed
 
 __all__ = [
     "__version__",
+    "ApiFailure",
+    "Concept",
     "Curie",
+    "Hierarchy",
     "Origin",
+    "SearchPage",
+    "SearchResult",
+    "SearchService",
     "SourceType",
     "Vocabulary",
     "VocabularyConflict",
