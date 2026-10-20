@@ -93,3 +93,47 @@ class Hierarchy:
 
     def __len__(self) -> int:
         return len(self.concepts)
+
+
+@dataclass(frozen=True, slots=True)
+class ApiFailure:
+    """An API that could not answer; the others' results are still returned."""
+
+    source: str
+    error: str
+    url: str | None = None  # API keys redacted
+
+
+@dataclass(frozen=True, slots=True)
+class SearchResult:
+    """One query sent to several APIs.
+
+    ``concepts`` merges every page in API order, keeping the first concept for
+    each CURIE (so an OLS IRI wins over UMLS's for the same HP code). ``pages``
+    keeps each API's own page, keyed by ``api_id``.
+    """
+
+    query: str
+    concepts: list[Concept]
+    pages: dict[str, SearchPage]
+    failures: list[ApiFailure] = field(default_factory=list)
+
+    @property
+    def more_available(self) -> bool:
+        return any(page.more_available for page in self.pages.values())
+
+    @property
+    def skipped(self) -> int:
+        return sum(page.skipped for page in self.pages.values())
+
+    def counts_by_prefix(self) -> dict[str, int]:
+        counts: dict[str, int] = {}
+        for concept in self.concepts:
+            counts[concept.prefix] = counts.get(concept.prefix, 0) + 1
+        return counts
+
+    def __iter__(self):
+        return iter(self.concepts)
+
+    def __len__(self) -> int:
+        return len(self.concepts)
